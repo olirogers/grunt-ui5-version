@@ -3,8 +3,10 @@
  * Simple Versioning utility for SAPUI5 applications by altering manifest file
  * application version component so that we can automate build process.
  *
- * @since  June 2016
- * @author Oliver Rogers
+ * @since     June 2016
+ * @author    Oliver Rogers
+ * @copyright Copyright (c) 2016 Oliver Rogers
+ * @license   Licensed under the Apache-2.0 license.
  */
 
 "use strict";

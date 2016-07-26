@@ -100,6 +100,10 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+1.0.0 First release - removed unused code
+
+0.1.2 Fix this Readme examples
+
 0.1.1 Properly add and document additional options for tag/commit.
 
 0.1.0 Initial Version
