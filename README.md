@@ -47,6 +47,19 @@ Default value: `0`
 
 A numeric value for JSON.stringify call to pretty print the outputted JSON file.
 
+#### options.defaultTag
+Type: `String`
+Default value: `No Tag Found`
+
+What to display if no tag is found. This could be used to detect any error in the deployment process.
+
+#### options.defaultSha
+Type: `String`
+Default value: `Not GIT?`
+
+What to display if no GIT commit SHA is found (limit 8 characters). If you are not using GIT, I am not sure why you would use this grunt task?
+
+
 ### Usage Examples
 
 #### Default Options
@@ -55,7 +68,23 @@ In this example, the default options are used to add the current git commit sha 
 ```js
 grunt.initConfig({
   ui5_version: {
-    options: {},
+    src: "src/manifest.json",
+    dest: "dest/manifest.json"
+  },
+});
+```
+
+#### Advanced Options
+The same example as above however we specify what to output in case of no tag or sha found. Additionally the output is formatted with 2 spaces.
+
+```js
+grunt.initConfig({
+  ui5_version: {
+    options: {
+        spacing: 2,
+        defaultTag: "Version X",
+        defaultSha: "default"
+    },
     src: "src/manifest.json",
     dest: "dest/manifest.json"
   },
@@ -66,5 +95,7 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+
+0.1.1 Properly add and document additional options for tag/commit.
 
 0.1.0 Initial Version

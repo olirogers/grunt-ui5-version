@@ -1,7 +1,7 @@
 {
   "name": "grunt-ui5-version",
   "description": "Versioning for UI5 based on GIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://www.bluefinsolutions.com/blogs/oliver-rogers",
   "author": {
     "name": "Oliver Rogers",

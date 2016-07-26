@@ -41,8 +41,8 @@ exports.ui5_version = {
         test.done();
     },
     compress: function (test) {
-        var actual  = grunt.file.read("tmp/compress.json"),
-            expected = grunt.file.read("test/expected/compress.json");
+        var actual  = grunt.file.read("tmp/advanced.json"),
+            expected = grunt.file.read("test/expected/advanced.json");
 
         // 1 test to be done
         test.expect(1);

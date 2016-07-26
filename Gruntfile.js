@@ -37,12 +37,14 @@ module.exports = function (grunt) {
                 src: "test/fixtures/manifest.json",
                 dest: "tmp/default_options.json"
             },
-            oompress: {
+            advanced: {
                 options: {
-                    spacing: 0
+                    spacing: 2,
+                    defaultTag: "Version X",
+                    defaultSha: "default"
                 },
                 src: "test/fixtures/manifest.json",
-                dest: "tmp/compress.json"
+                dest: "tmp/advanced.json"
             }
         },
 

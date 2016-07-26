@@ -20,8 +20,8 @@ module.exports = function (grunt) {
         // Merge task-specific and/or target-specific options with these defaults.
         var options = this.options({
                 defaultTag: "No Tag Found",
-                defaultSha: "Not a GIT repo?",
-                spacing: 2
+                defaultSha: "Not GIT?",
+                spacing: 0
             }),
             done    = this.async(),
             files   = this.files,
@@ -33,7 +33,8 @@ module.exports = function (grunt) {
             tag: async.apply(git.exec.bind(git), "describe", ["--abbrev=0"])
         }, function (err, result) {
             if (err) {
-                grunt.error(err);
+                grunt.log.writeln("UI5 Version: potential error detected, please check configuration.");
+                grunt.log.writeln(err);
             }
 
             // Use the current tag
