@@ -1,0 +1,40 @@
+{
+  "name": "grunt-ui5-version",
+  "description": "Versioning for UI5 based on GIT",
+  "version": "0.1.0",
+  "homepage": "http://www.bluefinsolutions.com/blogs/oliver-rogers",
+  "author": {
+    "name": "Oliver Rogers",
+    "email": "oliver.rogers@bluefinsolutions.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olirogers/grunt-ui5-version.git"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/olirogers/grunt-ui5-version/blob/master/LICENSE-Apache-2.0"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.12.10"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt": "~1.0.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "async": "^2.0.1",
+    "git-wrapper": "^0.1.1"
+  }
+}
