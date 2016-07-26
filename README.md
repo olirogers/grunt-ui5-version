@@ -68,9 +68,11 @@ In this example, the default options are used to add the current git commit sha 
 ```js
 grunt.initConfig({
   ui5_version: {
-    src: "src/manifest.json",
-    dest: "dest/manifest.json"
-  },
+    default_options: {
+      src:  "src/manifest.json",
+      dest: "dest/manifest.json"
+    }
+  }
 });
 ```
 
@@ -80,14 +82,16 @@ The same example as above however we specify what to output in case of no tag or
 ```js
 grunt.initConfig({
   ui5_version: {
-    options: {
+    advanced_options: {
+      options: {
         spacing: 2,
         defaultTag: "Version X",
         defaultSha: "default"
-    },
-    src: "src/manifest.json",
-    dest: "dest/manifest.json"
-  },
+      },
+      src:  "src/manifest.json",
+      dest: "dest/manifest.json"
+    }
+  }
 });
 ```
 
